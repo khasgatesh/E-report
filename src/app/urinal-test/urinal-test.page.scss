@@ -1,0 +1,26 @@
+*{
+    color:#000;
+}
+ion-item{
+   
+    margin-left:1rem;
+    font-size: 0.9em;
+    margin-bottom: 5%;
+
+   
+    box-shadow: none !important;
+    
+    --background: transparent!important;
+    --border-color:transparent!important;
+    
+    
+    --min-height: 16px;
+    
+  }
+  ion-input{
+      border-bottom:1px solid;
+     
+  }
+ ion-textarea{
+      border:1px solid;
+ }

@@ -1,0 +1,34 @@
+ion-menu-button,ion-label{
+    color:black;
+}
+ion-item{
+    border-radius: 30px !important;
+    padding-left: 30px !important;
+    font-size: 0.9em;
+    margin-bottom: 5%;
+    border: 1px solid #36802d;
+    border-bottom: 1px solid #36802d !important;
+    box-shadow: none !important;
+    border-left:1px solid #36802d!important;
+    --background: transparent!important;
+    --border-color:transparent!important;
+    color:#000;
+    margin:10px 10px 10px 10px;
+    --min-height: 16px;
+    
+  }
+  ion-input{
+    
+  
+    border-bottom:none !important;
+  }
+
+  *{
+    color:#000;
+  }
+  ion-col{
+    border: 2px solid #aeb7ca;
+  }
+  ion-grid{
+    border:1px solid;
+  }

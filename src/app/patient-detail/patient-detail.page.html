@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>patient_detail</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+    <!-- <p>{{item.payload.doc.data().Name}}</p>
+      <p>{{item.payload.doc.data().Mobileno}}</p> -->
+  <ion-grid *ngFor="let item of item">
+     <ion-row>
+       <ion-col>
+        {{item.payload.doc.data().Name}}
+       </ion-col>
+       <ion-col>
+        {{item.payload.doc.data().Mobileno}}
+       </ion-col>
+     </ion-row>
+  </ion-grid>
+
+
+  
+</ion-content>

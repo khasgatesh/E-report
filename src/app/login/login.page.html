@@ -1,0 +1,26 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+
+  </ion-header>
+  <ion-content>
+    <div class="container">
+      <img src="assets/logo.png" alt="">
+      <div class="input">
+        <ion-item lines="none">
+          <ion-icon size="small" slot="icon-only" name="create"></ion-icon>
+          <ion-input type="text" placeholder="Username or E-mail"  [(ngModel)]="email"></ion-input>
+
+        </ion-item>
+        <ion-item lines="none">
+          <ion-input type="password" placeholder="Password" [(ngModel)]="Createpassword"></ion-input>
+        </ion-item>
+      </div>
+
+      <ion-button expand="block" shape="round" (click)="Login()" [disabled]="!email || !Createpassword">Login</ion-button>
+
+      <p>Forgot Your <a href="/forgotpassword">Pasword?</a></p>
+      <p>New User? <a id="register" href="/register">Register</a></p>
+    </div>
+
+
+  </ion-content>

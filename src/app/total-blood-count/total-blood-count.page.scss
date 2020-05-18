@@ -1,0 +1,27 @@
+
+ion-item{
+    border-radius: 30px !important;
+    padding-left: 30px !important;
+    font-size: 0.9em;
+    margin-bottom: 5%;
+
+   
+    box-shadow: none !important;
+    
+    --background: transparent!important;
+    --border-color:transparent!important;
+    color:#000;
+    
+    --min-height: 16px;
+    
+  }
+  h6{color:#000;}
+  ion-menu-button{
+       color:black;
+  }
+  ion-input{
+       border-bottom: 1px solid;
+  }
+  ion-select .select-placeholder {
+     opacity: 10 !important;
+ }

@@ -1,0 +1,64 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+     
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    </ion-toolbar>
+    </ion-header>
+ 
+<ion-content padding>
+   <h6><strong>Complete Blood Count</strong></h6>
+  <ion-item lines="none">
+    <ion-label position="floating">Haemo globin </ion-label>
+    <ion-input [(ngModel)]="testobj.HB"></ion-input>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-label position="floating">Total Count</ion-label>
+    <ion-input [(ngModel)]="testobj.TC"></ion-input>
+  </ion-item>
+ 
+  <h6>
+    <strong>Differential Count</strong></h6>
+  <ion-item lines="none">
+    <ion-label position="floating">Neutriphils </ion-label>
+    <ion-input [(ngModel)]="testobj.NTP"></ion-input>
+  </ion-item>
+  <ion-item lines="none">
+  <ion-label position="floating">Lymphocytes </ion-label>
+    <ion-input [(ngModel)]="testobj.LMP"></ion-input>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-label position="floating">Eosinophils </ion-label>
+      <ion-input [(ngModel)]="testobj.ESP"></ion-input>
+    </ion-item>
+  <ion-item lines="none">
+    <ion-label position="floating">Monocytes </ion-label>
+      <ion-input [(ngModel)]="testobj.MNS"></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="floating">Basophil's </ion-label>
+        <ion-input [(ngModel)]="testobj.BSP"></ion-input>
+     </ion-item>
+     <ion-item lines="none">
+      <ion-label position="floating">Red Blood Cells</ion-label>
+        <ion-input [(ngModel)]="testobj.RBC"></ion-input>
+     </ion-item>
+     <ion-item lines="none">
+      <ion-label position="floating">Platelet Count </ion-label>
+        <ion-input [(ngModel)]="testobj.PLT"></ion-input>
+     </ion-item>
+
+     <ion-item lines="none">
+       
+         <ion-select interface="popover" placeholder="--Select--">
+           <ion-label position="floating">Malaria :</ion-label>
+           <ion-select-option>POSTIVE</ion-select-option>
+           <ion-select-option>NEGATIVE</ion-select-option>
+         </ion-select>
+ 
+     </ion-item>
+  <ion-button full (click)="createPdf()"> Submit</ion-button>
+  <ion-button full (click)="downloadPdf()" color="secondary" [disabled]="!pdfObj">Print Report</ion-button>
+  
+</ion-content>

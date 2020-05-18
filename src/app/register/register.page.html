@@ -1,0 +1,44 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="login"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header> 
+ 
+<ion-content> 
+ 
+  <div class="container"> 
+    <img src="assets/logo.png" alt="">
+    <div class="input">
+      <ion-item lines="none">
+        <ion-label>Sign in As</ion-label>
+        <ion-select placeholder="Select One" [(ngModel)]="role">
+          <ion-select-option value="p">Patient</ion-select-option>
+          <ion-select-option value="L">Lab Technician</ion-select-option>
+          <ion-select-option value="D">Doctor</ion-select-option>
+        </ion-select>
+      </ion-item>
+    
+     <ion-item lines="none" >
+       <ion-input type="text" placeholder="Enter Your Name" [(ngModel)]="Name"></ion-input>
+     </ion-item>
+     <ion-item lines="none" >
+      <ion-input type="text" placeholder="Enter Your Email" [(ngModel)]="Email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></ion-input>
+    </ion-item>
+    <ion-item lines="none" >
+      <ion-input type="text" placeholder="Enter Your Mobile" [(ngModel)]="Mobileno" maxlength="10" minlength="10"></ion-input>
+    </ion-item>
+    <ion-item lines="none" >
+      <ion-input type="password" placeholder="Create Password" [(ngModel)]="Createpassword"  minlength="8"></ion-input>
+    </ion-item>
+   </div>
+       
+   <ion-button expand="block" shape="round" (click)="success()" [disabled]="!role || !Name || !Email || !Mobileno || !Createpassword">Login</ion-button>
+        
+   </div>
+
+   
+   
+  
+</ion-content>

@@ -1,0 +1,8 @@
+{
+  "name": "E-report",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
