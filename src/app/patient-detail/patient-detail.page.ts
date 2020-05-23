@@ -15,6 +15,8 @@ export class PatientDetailPage implements OnInit {
   constructor(public db:AngularFirestore,public fb:FirebaseService,public fd:AngularFireDatabase) {
     this.fb.role().then(result=>{
       this.item=result
+
+     
       })
       
   }
@@ -32,9 +34,9 @@ export class PatientDetailPage implements OnInit {
                 //   })
                 //   console.log(this.pateints)
                 // })
-                this.fb.role().then(result=>{
-                this.item=result
-                }) 
+                // this.fb.role().then(result=>{
+                // this.item=result
+               // }) 
   }
 
 }

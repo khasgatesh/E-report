@@ -33,7 +33,16 @@ export class FirebaseService {
                     resolve(snapshots)
                })
           })
-        
+      
+
+   }
+   count(){
+         return new Promise<any>((resolve,reject)=>{
+          this.firestore.collection('/Register_users',ref=>ref.where('role','==','p')).snapshotChanges().subscribe(snapshots=>{
+               resolve(snapshots.length)
+          })
+
+          })
 
    }
 }
